@@ -65,12 +65,14 @@ function Hero() {
           <div className="hero-image-glow"></div>
 
           <img
-            src="/profile/sidPic.png"
+           /* src="/profile/sidPic.png"
             alt="Sidhant Kumar"
             onError={(e) => {
                console.log("Image load nahi hui:", e.currentTarget.src);
               e.currentTarget.style.display = "none";
-            }}
+            }}*/
+             src={`${import.meta.env.BASE_URL}sidPic.png`}
+  alt="Sidhant Kumar"
           />
 
           <div className="hero-badge">
